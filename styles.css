@@ -1,0 +1,71 @@
+:root {
+  --color-primary-white: #fff;
+  --color-primary-blue: #2b7fff;
+  --color-primary-bluedark: #011c44;
+
+  --color-secondary-grey1: #4a4a4a;
+  --color-secondary-grey2: #4a4a4a;
+  --color-secondary-greylight: #747272;
+  --color-secondary-bluedark: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+  --color-black: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* hero-section h1*/
+.hero-title {
+  color: var(--color-primary-blue);
+  font-family: "Play", sans-serif;
+  text-align: left;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 81%;
+  text-transform: capitalize;
+
+  /* font-style: italic; */
+  /* text-transform: capitalize; */
+  /* text-shadow: 2px 2px 4px violet;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  white-space: nowrap; */
+}
+
+/* Header */
+.header-link {
+  color: var(--color-primary-bluedark);
+}
+
+.header-link:hover {
+  color: var(--color-primary-blue);
+}
+
+/* Header - button*/
+.button-primary {
+  /* padding: 16px 32px;
+  width: 219px;
+  height: 53px; */
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  border: 1px solid var(--color-black);
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button-primary:hover {
+  background-color: transparent;
+  color: var(--color-primary-bluedark);
+  cursor: pointer;
+}
+
+/* Footer */
+.footer-link {
+  color: var(--color-primary-white);
+}
+
+/* вопрос - в макете ничем не отличается выделенный элемент меню нвигации */
+.footer-link:hover {
+  color: var(--color-primary-blue);
+}
