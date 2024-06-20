@@ -50,9 +50,11 @@
     <main>
       <section>
         <p>Косметологічна клініка</p>
-        <h1 class="hero-title" lang="en">Beauty Zone</h1>
+        <h1 class="hero-title" lang="en">beauty zone</h1>
         <button class="button-primary" type="button">Замовити дзвінок</button>
-        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        <p class="under-button">
+          Запишись та отримай безкоштовну консультацію нашого косметолога
+        </p>
       </section>
       <section id="section-about-us">
         <h2>
@@ -88,21 +90,21 @@
         <ul>
           <li>
             <img src="./images/3atom1.svg" alt="знак атома" />
-            <p>
+            <p class="section-why-us-p">
               Всі наші косметологи мають вищу медичну освіту та стаж роботи від
               5 років
             </p>
           </li>
           <li>
             <img src="./images/3equipment2.svg" alt="знак обладнання" />
-            <p>
+            <p class="section-why-us-p">
               Використовуємо тільки професійне обладнання та косметику,
               перевірену часом
             </p>
           </li>
           <li>
             <img src="./images/3krown3.svg" alt="знак корони" />
-            <p>
+            <p class="section-why-us-p">
               Наша мета - підкреслити переваги та приховати недоліки, а не
               переробити
             </p>
@@ -146,6 +148,22 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <div class="signup-free">
+          <p>
+            Запишіться <span class="form-signupfree-free">безкоштовно</span>
+          </p>
+          <p>та отримайте подарунок</p>
+          <p class="signup-free-input">Ваше ім'я та прізвище</p>
+          <p class="signup-free-input">Ваш номер телефону</p>
+          <p class="signup-free-input">Ваша електронна пошта</p>
+          <button class="button-primary" type="button">
+            Записатись безкоштовно
+          </button>
+          <p class="under-button">
+            Натискаючи на кнопку я погоджуюсь
+            <span class="privacy-policy">з політикою конфіденційності</span>
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -170,12 +188,21 @@
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+38(096)0000007">+ 38 (096) 000 00 07</a></li>
           <li>
-            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <a class="footer-link" href="tel:+38(096)0000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/fEm7gbNJra5HX7Uf8" target="_blank"
+            <a class="footer-link" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="https://maps.app.goo.gl/fEm7gbNJra5HX7Uf8"
+              target="_blank"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
@@ -189,9 +216,11 @@
             <a href="#"><!-- instagramm icon  --></a>
           </li>
         </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
       </address>
+      <a class="footer-link" href="#" target="_blank"
+        >Політика конфіденційності</a
+      >
+      <p class="copyrigt">&copy; 2022 Дані захищені</p>
     </footer>
   </body>
 </html>
