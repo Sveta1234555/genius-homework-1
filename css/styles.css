@@ -1,67 +1,59 @@
-/* play-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Play";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
 }
 
-/* play-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Play";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/play-v19-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
 }
 
-/* roboto-100 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-weight: 100;
-  src: url("../fonts/roboto-v30-cyrillic_latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-v30-cyrillic_latin-100.woff2") format("woff2");
 }
 
-/* roboto-300 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-weight: 300;
-  src: url("../fonts/roboto-v30-cyrillic_latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-v30-cyrillic_latin-300.woff2") format("woff2");
 }
 
-/* roboto-regular - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-weight: 400;
-  src: url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2");
 }
 
-/* roboto-500 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-weight: 500;
-  src: url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2");
 }
 
-/* roboto-700 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-weight: 700;
-  src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2");
 }
 
-/* roboto-900 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-weight: 900;
-  src: url("../fonts/roboto-v30-cyrillic_latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-v30-cyrillic_latin-900.woff2") format("woff2");
 }
 
 :root {
@@ -83,7 +75,15 @@ body {
   /* Доминантный */
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  /*21px/18px */
   color: var(--color-primary-bluedark);
+}
+
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -99,19 +99,17 @@ ul {
   color: var(--color-primary-blue);
   font-family: Play, sans-serif;
   text-align: left;
+  font-weight: 700;
   text-transform: capitalize;
   font-size: 140px;
+  line-height: 0.8;
+  /*114px/140px */
   border-radius: 2px 2px 2px 116px;
   /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);   из макета . Не работает*/
   /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
   /* -moz-text-decoration-line: 4px rgba(0, 0, 0, 0.25);
   text-stroke: 4px rgba(0, 0, 0, 0.25); */
   -webkit-text-stroke: 4px rgba(0, 0, 0, 0.25);
-
-  /* дальше пока ненадо */
-
-  font-weight: 700;
-  line-height: 81%;
 
   /* font-style: italic; */
   /* text-transform: capitalize; */
@@ -131,6 +129,7 @@ ul {
 
 .header-link:hover {
   color: var(--color-primary-blue);
+  font-weight: 700;
   /* text-decoration: underline; */
 }
 
@@ -145,6 +144,9 @@ ul {
   width: 219px;
   height: 53px; */
   color: var(--color-primary-white);
+  font-weight: 600;
+  /*21px/18px */
+  line-height: 1.2;
   background-color: var(--color-primary-blue);
   border: 1px solid var(--color-black);
   border-radius: 32px;
@@ -170,6 +172,8 @@ ul {
 .under-button {
   /* font-family: "Roboto", sans-serif; */
   font-size: 12px;
+  /*18px/12px */
+  line-height: 1.5;
   color: var(--color-secondary-grey1);
 }
 
@@ -178,45 +182,65 @@ ul {
 section h2 {
   font-family: "Play", sans-serif;
   font-size: 64px;
+  font-weight: 700;
+  /*74px/64px */
+  line-height: 1.2;
 }
 
 h2 span {
   color: var(--color-primary-blue);
 }
 
-.beauty-zone {
-  text-transform: capitalize;
-}
-
 /* Section about us */
 .about-us-p {
   font-size: 22px;
+  font-weight: 600;
+  /*38px/22px */
+  line-height: 1.7;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.beauty-zone {
+  text-transform: capitalize;
+  /* font-weight: 600; */
 }
 
 /* Section why us */
 .section-why-us-p {
   color: var(--color-black);
+  /*24px/18px */
+  line-height: 1.3;
 }
 
 /* Section procedure */
 h3 {
   color: var(--color-primary-white);
   font-size: 22px;
+  font-weight: 400;
+  /*26px/22px */
+  line-height: 1.2;
 }
 
 /* Section contacts */
 /* form sign up free */
-.signup-free p {
+.signup-free-p {
   color: var(--color-primary-white);
+  font-size: 22px;
+  font-weight: 600;
+  /*26px/22px */
+  line-height: 1.2;
 }
 
-.form-signupfree-free {
+.signup-free-p-free {
   color: var(--color-primary-blue);
 }
 
 .signup-free-input {
+  color: var(--color-primary-white);
   font-size: 13px;
+  font-weight: 400;
+  /*15px/13px */
+  line-height: 1.2;
 }
 
 .signup-free .button-primary {
