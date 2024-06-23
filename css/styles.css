@@ -109,7 +109,9 @@ ul {
   /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
   /* -moz-text-decoration-line: 4px rgba(0, 0, 0, 0.25);
   text-stroke: 4px rgba(0, 0, 0, 0.25); */
-  -webkit-text-stroke: 4px rgba(0, 0, 0, 0.25);
+
+  /* у меня визуально был шрифт с обрамлением. в макете - таки нет. */
+  /* -webkit-text-stroke: 4px rgba(0, 0, 0, 0.25); */
 
   /* font-style: italic; */
   /* text-transform: capitalize; */
@@ -137,20 +139,30 @@ ul {
   color: var(--color-primary-blue);
 } */
 
+.icon-link-ul {
+  display: flex;
+  flex-flow: row wrap;
+  background: white;
+}
+
 /* Main */
 /* Main Button*/
 .button-primary {
+  font-family: inherit;
+  /* font-family: "Roboto", sans-serif; button не наследует стиль font от body. что лучше по опыту- inherit или заново указывать font? */
+  font-size: 18px;
   /* padding: 16px 32px;
   width: 219px;
   height: 53px; */
   color: var(--color-primary-white);
   /* 18px не взялся с body */
-  font-size: 18px;
+  /* font-size: 18px; */
   /* и не помещается 18 при указанных width height??? */
   /* font-size: 16px; */
   font-weight: 600;
   /*21px/18px */
-  /* line-height: 1.2; */
+  line-height: 1.2;
+  /* ТОже непонятно - line-height наследует или нет. скорее нет */
   background-color: var(--color-primary-blue);
   border: 1px solid var(--color-black);
   border-radius: 32px;
